@@ -1,0 +1,1171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BridalPOS.Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BridalPOSModelStoreContainer">
+    <EntitySet Name="tblAction" EntityType="BridalPOS.Model.Store.tblAction" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCashDrawer" EntityType="BridalPOS.Model.Store.tblCashDrawer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblClass" EntityType="BridalPOS.Model.Store.tblClass" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblColor" EntityType="BridalPOS.Model.Store.tblColor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblColorNameList" EntityType="BridalPOS.Model.Store.tblColorNameList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblColorNameListColor" EntityType="BridalPOS.Model.Store.tblColorNameListColor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCommission" EntityType="BridalPOS.Model.Store.tblCommission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblEmployee" EntityType="BridalPOS.Model.Store.tblEmployee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblEvent" EntityType="BridalPOS.Model.Store.tblEvent" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblEventType" EntityType="BridalPOS.Model.Store.tblEventType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblFabric" EntityType="BridalPOS.Model.Store.tblFabric" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblFavorite" EntityType="BridalPOS.Model.Store.tblFavorite" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblGeneralReport" EntityType="BridalPOS.Model.Store.tblGeneralReport" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblInfoSource" EntityType="BridalPOS.Model.Store.tblInfoSource" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblInventory" EntityType="BridalPOS.Model.Store.tblInventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblItemStatus" EntityType="BridalPOS.Model.Store.tblItemStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblLeadTime" EntityType="BridalPOS.Model.Store.tblLeadTime" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblMember" EntityType="BridalPOS.Model.Store.tblMember" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblMemberRole" EntityType="BridalPOS.Model.Store.tblMemberRole" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblNeckLine" EntityType="BridalPOS.Model.Store.tblNeckLine" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblNote" EntityType="BridalPOS.Model.Store.tblNote" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblPaymentType" EntityType="BridalPOS.Model.Store.tblPaymentType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblPurchaseOrder" EntityType="BridalPOS.Model.Store.tblPurchaseOrder" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblPurchaseOrderDetail" EntityType="BridalPOS.Model.Store.tblPurchaseOrderDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblPurchaseStatus" EntityType="BridalPOS.Model.Store.tblPurchaseStatus" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblReportMessage" EntityType="BridalPOS.Model.Store.tblReportMessage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSchool" EntityType="BridalPOS.Model.Store.tblSchool" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSecurityLevel" EntityType="BridalPOS.Model.Store.tblSecurityLevel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSilhouette" EntityType="BridalPOS.Model.Store.tblSilhouette" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSizeRange" EntityType="BridalPOS.Model.Store.tblSizeRange" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSleeve" EntityType="BridalPOS.Model.Store.tblSleeve" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblStyleColor" EntityType="BridalPOS.Model.Store.tblStyleColor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblStyleColorNameList" EntityType="BridalPOS.Model.Store.tblStyleColorNameList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblStyleFormat" EntityType="BridalPOS.Model.Store.tblStyleFormat" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblStyleMaster" EntityType="BridalPOS.Model.Store.tblStyleMaster" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblSysParameter" EntityType="BridalPOS.Model.Store.tblSysParameter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblTicket" EntityType="BridalPOS.Model.Store.tblTicket" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblTicketDetail" EntityType="BridalPOS.Model.Store.tblTicketDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblTransactionType" EntityType="BridalPOS.Model.Store.tblTransactionType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblVendor" EntityType="BridalPOS.Model.Store.tblVendor" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tblAction_tblEmployee" Association="BridalPOS.Model.Store.FK_tblAction_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblAction" EntitySet="tblAction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblAction_tblMember" Association="BridalPOS.Model.Store.FK_tblAction_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblAction" EntitySet="tblAction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCashDrawer_tblPaymentType" Association="BridalPOS.Model.Store.FK_tblCashDrawer_tblPaymentType">
+      <End Role="tblPaymentType" EntitySet="tblPaymentType" />
+      <End Role="tblCashDrawer" EntitySet="tblCashDrawer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCashDrawer_tblTransactionType" Association="BridalPOS.Model.Store.FK_tblCashDrawer_tblTransactionType">
+      <End Role="tblTransactionType" EntitySet="tblTransactionType" />
+      <End Role="tblCashDrawer" EntitySet="tblCashDrawer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCommission_tblEmployee" Association="BridalPOS.Model.Store.FK_tblCommission_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblCommission" EntitySet="tblCommission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCommission_tblTicketDetail" Association="BridalPOS.Model.Store.FK_tblCommission_tblTicketDetail">
+      <End Role="tblTicketDetail" EntitySet="tblTicketDetail" />
+      <End Role="tblCommission" EntitySet="tblCommission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEvent_tblEmployee" Association="BridalPOS.Model.Store.FK_tblEvent_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblEvent" EntitySet="tblEvent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEvent_tblEventType" Association="BridalPOS.Model.Store.FK_tblEvent_tblEventType">
+      <End Role="tblEventType" EntitySet="tblEventType" />
+      <End Role="tblEvent" EntitySet="tblEvent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblEvent_tblMember" Association="BridalPOS.Model.Store.FK_tblEvent_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblEvent" EntitySet="tblEvent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFavorite_tblClass" Association="BridalPOS.Model.Store.FK_tblFavorite_tblClass">
+      <End Role="tblClass" EntitySet="tblClass" />
+      <End Role="tblFavorite" EntitySet="tblFavorite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFavorite_tblColor" Association="BridalPOS.Model.Store.FK_tblFavorite_tblColor">
+      <End Role="tblColor" EntitySet="tblColor" />
+      <End Role="tblFavorite" EntitySet="tblFavorite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFavorite_tblMember" Association="BridalPOS.Model.Store.FK_tblFavorite_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblFavorite" EntitySet="tblFavorite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFavorite_tblStyleMaster" Association="BridalPOS.Model.Store.FK_tblFavorite_tblStyleMaster">
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+      <End Role="tblFavorite" EntitySet="tblFavorite" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGeneralReport_tblSecurityLevel" Association="BridalPOS.Model.Store.FK_tblGeneralReport_tblSecurityLevel">
+      <End Role="tblSecurityLevel" EntitySet="tblSecurityLevel" />
+      <End Role="tblGeneralReport" EntitySet="tblGeneralReport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblInventory_tblColor" Association="BridalPOS.Model.Store.FK_tblInventory_tblColor">
+      <End Role="tblColor" EntitySet="tblColor" />
+      <End Role="tblInventory" EntitySet="tblInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblInventory_tblStyleMaster" Association="BridalPOS.Model.Store.FK_tblInventory_tblStyleMaster">
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+      <End Role="tblInventory" EntitySet="tblInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeadTime_tblClass" Association="BridalPOS.Model.Store.FK_tblLeadTime_tblClass">
+      <End Role="tblClass" EntitySet="tblClass" />
+      <End Role="tblLeadTime" EntitySet="tblLeadTime" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblLeadTime_tblVendor" Association="BridalPOS.Model.Store.FK_tblLeadTime_tblVendor">
+      <End Role="tblVendor" EntitySet="tblVendor" />
+      <End Role="tblLeadTime" EntitySet="tblLeadTime" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMember_tblInfoSource" Association="BridalPOS.Model.Store.FK_tblMember_tblInfoSource">
+      <End Role="tblInfoSource" EntitySet="tblInfoSource" />
+      <End Role="tblMember" EntitySet="tblMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMember_tblMember" Association="BridalPOS.Model.Store.FK_tblMember_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblMember1" EntitySet="tblMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMember_tblMemberRole" Association="BridalPOS.Model.Store.FK_tblMember_tblMemberRole">
+      <End Role="tblMemberRole" EntitySet="tblMemberRole" />
+      <End Role="tblMember" EntitySet="tblMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMember_tblSchool" Association="BridalPOS.Model.Store.FK_tblMember_tblSchool">
+      <End Role="tblSchool" EntitySet="tblSchool" />
+      <End Role="tblMember" EntitySet="tblMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblNote_tblEmployee" Association="BridalPOS.Model.Store.FK_tblNote_tblEmployee">
+      <End Role="tblEmployee" EntitySet="tblEmployee" />
+      <End Role="tblNote" EntitySet="tblNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblNote_tblMember" Association="BridalPOS.Model.Store.FK_tblNote_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblNote" EntitySet="tblNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPurchaseOrder_tblPurchaseStatus" Association="BridalPOS.Model.Store.FK_tblPurchaseOrder_tblPurchaseStatus">
+      <End Role="tblPurchaseStatus" EntitySet="tblPurchaseStatus" />
+      <End Role="tblPurchaseOrder" EntitySet="tblPurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPurchaseOrder_tblVendor" Association="BridalPOS.Model.Store.FK_tblPurchaseOrder_tblVendor">
+      <End Role="tblVendor" EntitySet="tblVendor" />
+      <End Role="tblPurchaseOrder" EntitySet="tblPurchaseOrder" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPurchaseOrderDetail_tblPurchaseOrder" Association="BridalPOS.Model.Store.FK_tblPurchaseOrderDetail_tblPurchaseOrder">
+      <End Role="tblPurchaseOrder" EntitySet="tblPurchaseOrder" />
+      <End Role="tblPurchaseOrderDetail" EntitySet="tblPurchaseOrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPurchaseOrderDetail_tblTicketDetail" Association="BridalPOS.Model.Store.FK_tblPurchaseOrderDetail_tblTicketDetail">
+      <End Role="tblTicketDetail" EntitySet="tblTicketDetail" />
+      <End Role="tblPurchaseOrderDetail" EntitySet="tblPurchaseOrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblClass" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblClass">
+      <End Role="tblClass" EntitySet="tblClass" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblFabric" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblFabric">
+      <End Role="tblFabric" EntitySet="tblFabric" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblNeckLine" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblNeckLine">
+      <End Role="tblNeckLine" EntitySet="tblNeckLine" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblSilhouette" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblSilhouette">
+      <End Role="tblSilhouette" EntitySet="tblSilhouette" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblSizeRange" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblSizeRange">
+      <End Role="tblSizeRange" EntitySet="tblSizeRange" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblSizeRange1" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblSizeRange1">
+      <End Role="tblSizeRange" EntitySet="tblSizeRange" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblSizeRange2" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblSizeRange2">
+      <End Role="tblSizeRange" EntitySet="tblSizeRange" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblSleeve" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblSleeve">
+      <End Role="tblSleeve" EntitySet="tblSleeve" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblStyleMaster_tblVendor" Association="BridalPOS.Model.Store.FK_tblStyleMaster_tblVendor">
+      <End Role="tblVendor" EntitySet="tblVendor" />
+      <End Role="tblStyleMaster" EntitySet="tblStyleMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSysParameter_tblStyleFormat" Association="BridalPOS.Model.Store.FK_tblSysParameter_tblStyleFormat">
+      <End Role="tblStyleFormat" EntitySet="tblStyleFormat" />
+      <End Role="tblSysParameter" EntitySet="tblSysParameter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTicket_tblMember" Association="BridalPOS.Model.Store.FK_tblTicket_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblTicket" EntitySet="tblTicket" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tblAction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PostDate" Type="datetime" />
+    <Property Name="DueDate" Type="datetime" />
+    <Property Name="CompleteDate" Type="datetime" />
+    <Property Name="Note" Type="varchar" MaxLength="1000" />
+    <Property Name="ClerkId" Type="smallint" />
+    <Property Name="MemberId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCashDrawer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionTypeId" Type="smallint" Nullable="false" />
+    <Property Name="PaymentTypeId" Type="smallint" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Description" Type="varchar" MaxLength="1000" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="IsArchive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblClass">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="MakeupPercent" Type="float" />
+    <Property Name="MakeupPrice" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblColor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="ColorCode" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tblColorNameList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblColorNameListColor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ColorNameListKey" Type="int" />
+    <Property Name="ColorKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tblCommission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeId" Type="smallint" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="IsPayable" Type="bit" Nullable="false" />
+    <Property Name="PaidDate" Type="datetime" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="TicketDetailId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEmployee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar" MaxLength="100" />
+    <Property Name="LastName" Type="varchar" MaxLength="100" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Cell" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblEvent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="TypeId" Type="smallint" />
+    <Property Name="ConsultantId" Type="smallint" />
+    <Property Name="BM" Type="smallint" />
+    <Property Name="GM" Type="smallint" />
+    <Property Name="FG" Type="smallint" />
+    <Property Name="MemberId" Type="int" Nullable="false" />
+    <Property Name="IsCancelled" Type="bit" Nullable="false" />
+    <Property Name="RegistrationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblEventType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblFabric">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblFavorite">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PostDate" Type="datetime" />
+    <Property Name="StyleId" Type="int" />
+    <Property Name="ColorId" Type="smallint" />
+    <Property Name="Note" Type="varchar" MaxLength="1000" />
+    <Property Name="ClassId" Type="smallint" />
+    <Property Name="MemberId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGeneralReport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Path" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Description" Type="varchar" MaxLength="1000" />
+    <Property Name="SecurityLevelId" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblInfoSource">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblInventory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StyleId" Type="int" Nullable="false" />
+    <Property Name="ColorId" Type="smallint" Nullable="false" />
+    <Property Name="Size" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="SampleQty" Type="int" Nullable="false" />
+    <Property Name="LayawayQty" Type="int" Nullable="false" />
+    <Property Name="DateOfSample" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblItemStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblLeadTime">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VendorId" Type="smallint" Nullable="false" />
+    <Property Name="ClassId" Type="smallint" Nullable="false" />
+    <Property Name="RegLeadTime" Type="smallint" />
+    <Property Name="RushLeadTime" Type="smallint" />
+  </EntityType>
+  <EntityType Name="tblMember">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar" MaxLength="100" />
+    <Property Name="LastName" Type="varchar" MaxLength="100" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Address1" Type="varchar" MaxLength="200" />
+    <Property Name="Address2" Type="varchar" MaxLength="200" />
+    <Property Name="City" Type="varchar" MaxLength="200" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Zip" Type="varchar" MaxLength="10" />
+    <Property Name="Cell" Type="varchar" MaxLength="20" />
+    <Property Name="Fax" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" MaxLength="200" />
+    <Property Name="SchoolId" Type="smallint" />
+    <Property Name="GradYear" Type="smallint" />
+    <Property Name="SourceInfoId" Type="smallint" />
+    <Property Name="Bust" Type="varchar" MaxLength="50" />
+    <Property Name="Waist" Type="varchar" MaxLength="50" />
+    <Property Name="Hip" Type="varchar" MaxLength="50" />
+    <Property Name="Size" Type="varchar" MaxLength="50" />
+    <Property Name="Height" Type="varchar" MaxLength="50" />
+    <Property Name="RoleId" Type="smallint" />
+    <Property Name="OwnerId" Type="int" />
+  </EntityType>
+  <EntityType Name="tblMemberRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblNeckLine">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblNote">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PostDate" Type="datetime" />
+    <Property Name="ClerkId" Type="smallint" />
+    <Property Name="Note" Type="varchar" MaxLength="1000" />
+    <Property Name="MemberId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPaymentType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblPurchaseOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VendorId" Type="smallint" Nullable="false" />
+    <Property Name="ShipVia" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="ReqShipDate" Type="datetime" />
+    <Property Name="VendorShipDate" Type="datetime" />
+    <Property Name="VendorConf" Type="varchar" MaxLength="200" />
+    <Property Name="VendorSpokeTo" Type="varchar" MaxLength="200" />
+    <Property Name="Note" Type="varchar" MaxLength="1000" />
+    <Property Name="RecPONote" Type="varchar" MaxLength="1000" />
+    <Property Name="PostedDate" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="StatusId" Type="smallint" Nullable="false" />
+    <Property Name="VoidReason" Type="varchar" MaxLength="1000" />
+    <Property Name="POName" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblPurchaseOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PurchaseOrderId" Type="int" Nullable="false" />
+    <Property Name="TicketDetailId" Type="int" Nullable="false" />
+    <Property Name="Line" Type="smallint" Nullable="false" />
+    <Property Name="ReceivedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblPurchaseStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblReportMessage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="tblSchool">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblSecurityLevel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblSilhouette">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblSizeRange">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Range" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="tblSleeve">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblStyleColor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StyleKey" Type="int" />
+    <Property Name="ColorKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tblStyleColorNameList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StyleKey" Type="int" Nullable="false" />
+    <Property Name="ColorNameListKey" Type="int" />
+  </EntityType>
+  <EntityType Name="tblStyleFormat">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblStyleMaster">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="VendorId" Type="smallint" />
+    <Property Name="VendorStyle" Type="varchar" MaxLength="50" />
+    <Property Name="StoreStyle" Type="varchar" MaxLength="50" />
+    <Property Name="ClassId" Type="smallint" />
+    <Property Name="ShortDescr" Type="varchar" MaxLength="200" />
+    <Property Name="SizeRangeId" Type="smallint" />
+    <Property Name="ExtraSizeRangeId1" Type="smallint" />
+    <Property Name="Charge1" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ExtraSizeRangeId2" Type="smallint" />
+    <Property Name="Charge2" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="XLCharge" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="NeckLineId" Type="smallint" />
+    <Property Name="SilhouetteId" Type="smallint" />
+    <Property Name="FabricId" Type="smallint" />
+    <Property Name="SleeveId" Type="smallint" />
+    <Property Name="IsServiceItem" Type="bit" Nullable="false" />
+    <Property Name="Cost" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="RetailPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="CommissionPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="CommissionPercent" Type="float" />
+    <Property Name="IsTax1" Type="bit" Nullable="false" />
+    <Property Name="IsTax2" Type="bit" Nullable="false" />
+    <Property Name="LongDescr" Type="varchar" MaxLength="4000" />
+    <Property Name="IsReorderable" Type="bit" Nullable="false" />
+    <Property Name="DiscDate" Type="datetime" />
+    <Property Name="RegLeadTime" Type="smallint" />
+    <Property Name="RushLeadTime" Type="smallint" />
+  </EntityType>
+  <EntityType Name="tblSysParameter">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="200" />
+    <Property Name="Address1" Type="varchar" MaxLength="200" />
+    <Property Name="Address2" Type="varchar" MaxLength="200" />
+    <Property Name="City" Type="varchar" MaxLength="200" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Zip" Type="varchar" MaxLength="10" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Fax" Type="varchar" MaxLength="20" />
+    <Property Name="TempOverridePwd" Type="varchar" MaxLength="200" />
+    <Property Name="OverridePwd" Type="varchar" MaxLength="200" />
+    <Property Name="DiscPercentPwd" Type="float" />
+    <Property Name="DiscPricePwd" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DepositPercent" Type="float" />
+    <Property Name="StyleFormatId" Type="smallint" />
+    <Property Name="ManagerPwd" Type="varchar" MaxLength="200" />
+    <Property Name="OwnerPwd" Type="varchar" MaxLength="200" />
+    <Property Name="TaxName1" Type="varchar" MaxLength="200" />
+    <Property Name="TaxName2" Type="varchar" MaxLength="200" />
+    <Property Name="TaxPercent1" Type="float" />
+    <Property Name="TaxPercent2" Type="float" />
+    <Property Name="ImagePath" Type="varchar" MaxLength="1000" />
+    <Property Name="AutoStoreStyle" Type="int" Nullable="false" />
+    <Property Name="LastedRegisterSetup" Type="datetime" Nullable="false" />
+    <Property Name="LogoPath" Type="varchar" MaxLength="1000" />
+    <Property Name="CashRegisterStatus" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="BasePriceOnly" Type="bit" />
+    <Property Name="TeamLeaderPwd" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblTicket">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="MemberId" Type="int" Nullable="false" />
+    <Property Name="Total" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="PaidAmount" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Balance" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblTicketDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TicketId" Type="int" Nullable="false" />
+    <Property Name="ReceiptId" Type="int" />
+    <Property Name="TransactionTypeId" Type="smallint" Nullable="false" />
+    <Property Name="TransactionDate" Type="datetime" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="1000" />
+    <Property Name="StyleId" Type="int" />
+    <Property Name="ColorId" Type="smallint" />
+    <Property Name="Size" Type="varchar" MaxLength="50" />
+    <Property Name="XL" Type="varchar" MaxLength="50" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="DiscountPercent" Type="float" />
+    <Property Name="DiscountPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Tax1" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Tax2" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="RunningTotal" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="ChangeDue" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="VendorNote" Type="varchar" MaxLength="1000" />
+    <Property Name="StoreNote" Type="varchar" MaxLength="1000" />
+    <Property Name="ConsultantId1" Type="smallint" />
+    <Property Name="ConsultantId2" Type="smallint" />
+    <Property Name="ConsultantId3" Type="smallint" />
+    <Property Name="StatusId" Type="smallint" />
+    <Property Name="PaymentTypeId" Type="smallint" />
+    <Property Name="CreditNumber" Type="varchar" MaxLength="50" />
+    <Property Name="PaymentRef" Type="varchar" MaxLength="50" />
+    <Property Name="Remark" Type="varchar" MaxLength="1000" />
+    <Property Name="PurchaseOrderId" Type="int" />
+    <Property Name="RefundTypeId" Type="smallint" />
+    <Property Name="IsStoreCredit" Type="bit" Nullable="false" />
+    <Property Name="StoreCheck" Type="varchar" MaxLength="50" />
+    <Property Name="StoreCheckRef" Type="varchar" MaxLength="50" />
+    <Property Name="RefundRef" Type="varchar" MaxLength="50" />
+    <Property Name="IsUpdatedReceiptId" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblTransactionType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tblVendor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="smallint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Address" Type="varchar" MaxLength="200" />
+    <Property Name="City" Type="varchar" MaxLength="200" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="Zip" Type="varchar" MaxLength="10" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Fax" Type="varchar" MaxLength="20" />
+    <Property Name="Contact" Type="varchar" MaxLength="200" />
+    <Property Name="Manager" Type="varchar" MaxLength="200" />
+    <Property Name="ARContact" Type="varchar" MaxLength="200" />
+    <Property Name="Acc" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_tblAction_tblEmployee">
+    <End Role="tblEmployee" Type="BridalPOS.Model.Store.tblEmployee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblAction" Type="BridalPOS.Model.Store.tblAction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblAction">
+        <PropertyRef Name="ClerkId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblAction_tblMember">
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblAction" Type="BridalPOS.Model.Store.tblAction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblAction">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCashDrawer_tblPaymentType">
+    <End Role="tblPaymentType" Type="BridalPOS.Model.Store.tblPaymentType" Multiplicity="1" />
+    <End Role="tblCashDrawer" Type="BridalPOS.Model.Store.tblCashDrawer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPaymentType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblCashDrawer">
+        <PropertyRef Name="PaymentTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCashDrawer_tblTransactionType">
+    <End Role="tblTransactionType" Type="BridalPOS.Model.Store.tblTransactionType" Multiplicity="1" />
+    <End Role="tblCashDrawer" Type="BridalPOS.Model.Store.tblCashDrawer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTransactionType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblCashDrawer">
+        <PropertyRef Name="TransactionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCommission_tblEmployee">
+    <End Role="tblEmployee" Type="BridalPOS.Model.Store.tblEmployee" Multiplicity="1" />
+    <End Role="tblCommission" Type="BridalPOS.Model.Store.tblCommission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblCommission">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCommission_tblTicketDetail">
+    <End Role="tblTicketDetail" Type="BridalPOS.Model.Store.tblTicketDetail" Multiplicity="1" />
+    <End Role="tblCommission" Type="BridalPOS.Model.Store.tblCommission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTicketDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblCommission">
+        <PropertyRef Name="TicketDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEvent_tblEmployee">
+    <End Role="tblEmployee" Type="BridalPOS.Model.Store.tblEmployee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblEvent" Type="BridalPOS.Model.Store.tblEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblEvent">
+        <PropertyRef Name="ConsultantId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEvent_tblEventType">
+    <End Role="tblEventType" Type="BridalPOS.Model.Store.tblEventType" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblEvent" Type="BridalPOS.Model.Store.tblEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEventType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblEvent">
+        <PropertyRef Name="TypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblEvent_tblMember">
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblEvent" Type="BridalPOS.Model.Store.tblEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblEvent">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFavorite_tblClass">
+    <End Role="tblClass" Type="BridalPOS.Model.Store.tblClass" Multiplicity="0..1" />
+    <End Role="tblFavorite" Type="BridalPOS.Model.Store.tblFavorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblClass">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFavorite">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFavorite_tblColor">
+    <End Role="tblColor" Type="BridalPOS.Model.Store.tblColor" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblFavorite" Type="BridalPOS.Model.Store.tblFavorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblColor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFavorite">
+        <PropertyRef Name="ColorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFavorite_tblMember">
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblFavorite" Type="BridalPOS.Model.Store.tblFavorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFavorite">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFavorite_tblStyleMaster">
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblFavorite" Type="BridalPOS.Model.Store.tblFavorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStyleMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblFavorite">
+        <PropertyRef Name="StyleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGeneralReport_tblSecurityLevel">
+    <End Role="tblSecurityLevel" Type="BridalPOS.Model.Store.tblSecurityLevel" Multiplicity="1" />
+    <End Role="tblGeneralReport" Type="BridalPOS.Model.Store.tblGeneralReport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSecurityLevel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblGeneralReport">
+        <PropertyRef Name="SecurityLevelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblInventory_tblColor">
+    <End Role="tblColor" Type="BridalPOS.Model.Store.tblColor" Multiplicity="1" />
+    <End Role="tblInventory" Type="BridalPOS.Model.Store.tblInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblColor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblInventory">
+        <PropertyRef Name="ColorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblInventory_tblStyleMaster">
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="1" />
+    <End Role="tblInventory" Type="BridalPOS.Model.Store.tblInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStyleMaster">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblInventory">
+        <PropertyRef Name="StyleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeadTime_tblClass">
+    <End Role="tblClass" Type="BridalPOS.Model.Store.tblClass" Multiplicity="1" />
+    <End Role="tblLeadTime" Type="BridalPOS.Model.Store.tblLeadTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblClass">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblLeadTime">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblLeadTime_tblVendor">
+    <End Role="tblVendor" Type="BridalPOS.Model.Store.tblVendor" Multiplicity="1" />
+    <End Role="tblLeadTime" Type="BridalPOS.Model.Store.tblLeadTime" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblVendor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblLeadTime">
+        <PropertyRef Name="VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMember_tblInfoSource">
+    <End Role="tblInfoSource" Type="BridalPOS.Model.Store.tblInfoSource" Multiplicity="0..1" />
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblInfoSource">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblMember">
+        <PropertyRef Name="SourceInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMember_tblMember">
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="0..1" />
+    <End Role="tblMember1" Type="BridalPOS.Model.Store.tblMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblMember1">
+        <PropertyRef Name="OwnerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMember_tblMemberRole">
+    <End Role="tblMemberRole" Type="BridalPOS.Model.Store.tblMemberRole" Multiplicity="0..1" />
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMemberRole">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblMember">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMember_tblSchool">
+    <End Role="tblSchool" Type="BridalPOS.Model.Store.tblSchool" Multiplicity="0..1" />
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSchool">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblMember">
+        <PropertyRef Name="SchoolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblNote_tblEmployee">
+    <End Role="tblEmployee" Type="BridalPOS.Model.Store.tblEmployee" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblNote" Type="BridalPOS.Model.Store.tblNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblEmployee">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblNote">
+        <PropertyRef Name="ClerkId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblNote_tblMember">
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblNote" Type="BridalPOS.Model.Store.tblNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblNote">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPurchaseOrder_tblPurchaseStatus">
+    <End Role="tblPurchaseStatus" Type="BridalPOS.Model.Store.tblPurchaseStatus" Multiplicity="1" />
+    <End Role="tblPurchaseOrder" Type="BridalPOS.Model.Store.tblPurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPurchaseStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblPurchaseOrder">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPurchaseOrder_tblVendor">
+    <End Role="tblVendor" Type="BridalPOS.Model.Store.tblVendor" Multiplicity="1" />
+    <End Role="tblPurchaseOrder" Type="BridalPOS.Model.Store.tblPurchaseOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblVendor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblPurchaseOrder">
+        <PropertyRef Name="VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPurchaseOrderDetail_tblPurchaseOrder">
+    <End Role="tblPurchaseOrder" Type="BridalPOS.Model.Store.tblPurchaseOrder" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblPurchaseOrderDetail" Type="BridalPOS.Model.Store.tblPurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPurchaseOrder">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblPurchaseOrderDetail">
+        <PropertyRef Name="PurchaseOrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPurchaseOrderDetail_tblTicketDetail">
+    <End Role="tblTicketDetail" Type="BridalPOS.Model.Store.tblTicketDetail" Multiplicity="1" />
+    <End Role="tblPurchaseOrderDetail" Type="BridalPOS.Model.Store.tblPurchaseOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTicketDetail">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblPurchaseOrderDetail">
+        <PropertyRef Name="TicketDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblClass">
+    <End Role="tblClass" Type="BridalPOS.Model.Store.tblClass" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblClass">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="ClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblFabric">
+    <End Role="tblFabric" Type="BridalPOS.Model.Store.tblFabric" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFabric">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="FabricId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblNeckLine">
+    <End Role="tblNeckLine" Type="BridalPOS.Model.Store.tblNeckLine" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNeckLine">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="NeckLineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblSilhouette">
+    <End Role="tblSilhouette" Type="BridalPOS.Model.Store.tblSilhouette" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSilhouette">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="SilhouetteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblSizeRange">
+    <End Role="tblSizeRange" Type="BridalPOS.Model.Store.tblSizeRange" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSizeRange">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="SizeRangeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblSizeRange1">
+    <End Role="tblSizeRange" Type="BridalPOS.Model.Store.tblSizeRange" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSizeRange">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="ExtraSizeRangeId1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblSizeRange2">
+    <End Role="tblSizeRange" Type="BridalPOS.Model.Store.tblSizeRange" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSizeRange">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="ExtraSizeRangeId2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblSleeve">
+    <End Role="tblSleeve" Type="BridalPOS.Model.Store.tblSleeve" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSleeve">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="SleeveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblStyleMaster_tblVendor">
+    <End Role="tblVendor" Type="BridalPOS.Model.Store.tblVendor" Multiplicity="0..1" />
+    <End Role="tblStyleMaster" Type="BridalPOS.Model.Store.tblStyleMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblVendor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblStyleMaster">
+        <PropertyRef Name="VendorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSysParameter_tblStyleFormat">
+    <End Role="tblStyleFormat" Type="BridalPOS.Model.Store.tblStyleFormat" Multiplicity="0..1" />
+    <End Role="tblSysParameter" Type="BridalPOS.Model.Store.tblSysParameter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblStyleFormat">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblSysParameter">
+        <PropertyRef Name="StyleFormatId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTicket_tblMember">
+    <End Role="tblMember" Type="BridalPOS.Model.Store.tblMember" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblTicket" Type="BridalPOS.Model.Store.tblTicket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tblTicket">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'BridalPOS.dbo.tblSystemStatus' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="tblSystemStatus">
+        <Property Name="status" Type="bit" />
+      </EntityType>-->
+</Schema>

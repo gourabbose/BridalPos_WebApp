@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BridalPOSModelStoreContainer" CdmEntityContainer="BridalPOSEntities1">
+    <EntitySetMapping Name="tblActions">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblAction">
+        <MappingFragment StoreEntitySet="tblAction">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="CompleteDate" ColumnName="CompleteDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="ClerkId" ColumnName="ClerkId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCashDrawers">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblCashDrawer">
+        <MappingFragment StoreEntitySet="tblCashDrawer">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TransactionTypeId" ColumnName="TransactionTypeId" />
+          <ScalarProperty Name="PaymentTypeId" ColumnName="PaymentTypeId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="IsArchive" ColumnName="IsArchive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblClasses">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblClass">
+        <MappingFragment StoreEntitySet="tblClass">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MakeupPercent" ColumnName="MakeupPercent" />
+          <ScalarProperty Name="MakeupPrice" ColumnName="MakeupPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblColors">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblColor">
+        <MappingFragment StoreEntitySet="tblColor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblColorNameLists">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblColorNameList">
+        <MappingFragment StoreEntitySet="tblColorNameList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblColorNameListColors">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblColorNameListColor">
+        <MappingFragment StoreEntitySet="tblColorNameListColor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ColorNameListKey" ColumnName="ColorNameListKey" />
+          <ScalarProperty Name="ColorKey" ColumnName="ColorKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCommissions">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblCommission">
+        <MappingFragment StoreEntitySet="tblCommission">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsPayable" ColumnName="IsPayable" />
+          <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TicketDetailId" ColumnName="TicketDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmployees">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblEmployee">
+        <MappingFragment StoreEntitySet="tblEmployee">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Cell" ColumnName="Cell" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEvents">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblEvent">
+        <MappingFragment StoreEntitySet="tblEvent">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="ConsultantId" ColumnName="ConsultantId" />
+          <ScalarProperty Name="BM" ColumnName="BM" />
+          <ScalarProperty Name="GM" ColumnName="GM" />
+          <ScalarProperty Name="FG" ColumnName="FG" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="IsCancelled" ColumnName="IsCancelled" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEventTypes">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblEventType">
+        <MappingFragment StoreEntitySet="tblEventType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFabrics">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblFabric">
+        <MappingFragment StoreEntitySet="tblFabric">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFavorites">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblFavorite">
+        <MappingFragment StoreEntitySet="tblFavorite">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="StyleId" ColumnName="StyleId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGeneralReports">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblGeneralReport">
+        <MappingFragment StoreEntitySet="tblGeneralReport">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SecurityLevelId" ColumnName="SecurityLevelId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblInfoSources">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblInfoSource">
+        <MappingFragment StoreEntitySet="tblInfoSource">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblInventories">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblInventory">
+        <MappingFragment StoreEntitySet="tblInventory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StyleId" ColumnName="StyleId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SampleQty" ColumnName="SampleQty" />
+          <ScalarProperty Name="LayawayQty" ColumnName="LayawayQty" />
+          <ScalarProperty Name="DateOfSample" ColumnName="DateOfSample" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblItemStatus">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblItemStatu">
+        <MappingFragment StoreEntitySet="tblItemStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblLeadTimes">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblLeadTime">
+        <MappingFragment StoreEntitySet="tblLeadTime">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="RegLeadTime" ColumnName="RegLeadTime" />
+          <ScalarProperty Name="RushLeadTime" ColumnName="RushLeadTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMembers">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblMember">
+        <MappingFragment StoreEntitySet="tblMember">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Cell" ColumnName="Cell" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="SchoolId" ColumnName="SchoolId" />
+          <ScalarProperty Name="GradYear" ColumnName="GradYear" />
+          <ScalarProperty Name="SourceInfoId" ColumnName="SourceInfoId" />
+          <ScalarProperty Name="Bust" ColumnName="Bust" />
+          <ScalarProperty Name="Waist" ColumnName="Waist" />
+          <ScalarProperty Name="Hip" ColumnName="Hip" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMemberRoles">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblMemberRole">
+        <MappingFragment StoreEntitySet="tblMemberRole">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNeckLines">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblNeckLine">
+        <MappingFragment StoreEntitySet="tblNeckLine">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNotes">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblNote">
+        <MappingFragment StoreEntitySet="tblNote">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="ClerkId" ColumnName="ClerkId" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPaymentTypes">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblPaymentType">
+        <MappingFragment StoreEntitySet="tblPaymentType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPurchaseOrders">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblPurchaseOrder">
+        <MappingFragment StoreEntitySet="tblPurchaseOrder">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="ShipVia" ColumnName="ShipVia" />
+          <ScalarProperty Name="ReqShipDate" ColumnName="ReqShipDate" />
+          <ScalarProperty Name="VendorShipDate" ColumnName="VendorShipDate" />
+          <ScalarProperty Name="VendorConf" ColumnName="VendorConf" />
+          <ScalarProperty Name="VendorSpokeTo" ColumnName="VendorSpokeTo" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="RecPONote" ColumnName="RecPONote" />
+          <ScalarProperty Name="PostedDate" ColumnName="PostedDate" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="VoidReason" ColumnName="VoidReason" />
+          <ScalarProperty Name="POName" ColumnName="POName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPurchaseOrderDetails">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblPurchaseOrderDetail">
+        <MappingFragment StoreEntitySet="tblPurchaseOrderDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="TicketDetailId" ColumnName="TicketDetailId" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="ReceivedDate" ColumnName="ReceivedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPurchaseStatus">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblPurchaseStatu">
+        <MappingFragment StoreEntitySet="tblPurchaseStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblReportMessages">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblReportMessage">
+        <MappingFragment StoreEntitySet="tblReportMessage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSchools">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblSchool">
+        <MappingFragment StoreEntitySet="tblSchool">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSecurityLevels">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblSecurityLevel">
+        <MappingFragment StoreEntitySet="tblSecurityLevel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSilhouettes">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblSilhouette">
+        <MappingFragment StoreEntitySet="tblSilhouette">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSizeRanges">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblSizeRange">
+        <MappingFragment StoreEntitySet="tblSizeRange">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSleeves">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblSleeve">
+        <MappingFragment StoreEntitySet="tblSleeve">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStyleColors">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblStyleColor">
+        <MappingFragment StoreEntitySet="tblStyleColor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StyleKey" ColumnName="StyleKey" />
+          <ScalarProperty Name="ColorKey" ColumnName="ColorKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStyleColorNameLists">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblStyleColorNameList">
+        <MappingFragment StoreEntitySet="tblStyleColorNameList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StyleKey" ColumnName="StyleKey" />
+          <ScalarProperty Name="ColorNameListKey" ColumnName="ColorNameListKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStyleFormats">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblStyleFormat">
+        <MappingFragment StoreEntitySet="tblStyleFormat">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStyleMasters">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblStyleMaster">
+        <MappingFragment StoreEntitySet="tblStyleMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="VendorId" ColumnName="VendorId" />
+          <ScalarProperty Name="VendorStyle" ColumnName="VendorStyle" />
+          <ScalarProperty Name="StoreStyle" ColumnName="StoreStyle" />
+          <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+          <ScalarProperty Name="ShortDescr" ColumnName="ShortDescr" />
+          <ScalarProperty Name="SizeRangeId" ColumnName="SizeRangeId" />
+          <ScalarProperty Name="ExtraSizeRangeId1" ColumnName="ExtraSizeRangeId1" />
+          <ScalarProperty Name="Charge1" ColumnName="Charge1" />
+          <ScalarProperty Name="ExtraSizeRangeId2" ColumnName="ExtraSizeRangeId2" />
+          <ScalarProperty Name="Charge2" ColumnName="Charge2" />
+          <ScalarProperty Name="XLCharge" ColumnName="XLCharge" />
+          <ScalarProperty Name="NeckLineId" ColumnName="NeckLineId" />
+          <ScalarProperty Name="SilhouetteId" ColumnName="SilhouetteId" />
+          <ScalarProperty Name="FabricId" ColumnName="FabricId" />
+          <ScalarProperty Name="SleeveId" ColumnName="SleeveId" />
+          <ScalarProperty Name="IsServiceItem" ColumnName="IsServiceItem" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+          <ScalarProperty Name="CommissionPrice" ColumnName="CommissionPrice" />
+          <ScalarProperty Name="CommissionPercent" ColumnName="CommissionPercent" />
+          <ScalarProperty Name="IsTax1" ColumnName="IsTax1" />
+          <ScalarProperty Name="IsTax2" ColumnName="IsTax2" />
+          <ScalarProperty Name="LongDescr" ColumnName="LongDescr" />
+          <ScalarProperty Name="IsReorderable" ColumnName="IsReorderable" />
+          <ScalarProperty Name="DiscDate" ColumnName="DiscDate" />
+          <ScalarProperty Name="RegLeadTime" ColumnName="RegLeadTime" />
+          <ScalarProperty Name="RushLeadTime" ColumnName="RushLeadTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSysParameters">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblSysParameter">
+        <MappingFragment StoreEntitySet="tblSysParameter">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="TempOverridePwd" ColumnName="TempOverridePwd" />
+          <ScalarProperty Name="OverridePwd" ColumnName="OverridePwd" />
+          <ScalarProperty Name="DiscPercentPwd" ColumnName="DiscPercentPwd" />
+          <ScalarProperty Name="DiscPricePwd" ColumnName="DiscPricePwd" />
+          <ScalarProperty Name="DepositPercent" ColumnName="DepositPercent" />
+          <ScalarProperty Name="StyleFormatId" ColumnName="StyleFormatId" />
+          <ScalarProperty Name="ManagerPwd" ColumnName="ManagerPwd" />
+          <ScalarProperty Name="OwnerPwd" ColumnName="OwnerPwd" />
+          <ScalarProperty Name="TaxName1" ColumnName="TaxName1" />
+          <ScalarProperty Name="TaxName2" ColumnName="TaxName2" />
+          <ScalarProperty Name="TaxPercent1" ColumnName="TaxPercent1" />
+          <ScalarProperty Name="TaxPercent2" ColumnName="TaxPercent2" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="AutoStoreStyle" ColumnName="AutoStoreStyle" />
+          <ScalarProperty Name="LastedRegisterSetup" ColumnName="LastedRegisterSetup" />
+          <ScalarProperty Name="LogoPath" ColumnName="LogoPath" />
+          <ScalarProperty Name="CashRegisterStatus" ColumnName="CashRegisterStatus" />
+          <ScalarProperty Name="BasePriceOnly" ColumnName="BasePriceOnly" />
+          <ScalarProperty Name="TeamLeaderPwd" ColumnName="TeamLeaderPwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTickets">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblTicket">
+        <MappingFragment StoreEntitySet="tblTicket">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTicketDetails">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblTicketDetail">
+        <MappingFragment StoreEntitySet="tblTicketDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TicketId" ColumnName="TicketId" />
+          <ScalarProperty Name="ReceiptId" ColumnName="ReceiptId" />
+          <ScalarProperty Name="TransactionTypeId" ColumnName="TransactionTypeId" />
+          <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="StyleId" ColumnName="StyleId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="XL" ColumnName="XL" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="DiscountPrice" ColumnName="DiscountPrice" />
+          <ScalarProperty Name="Tax1" ColumnName="Tax1" />
+          <ScalarProperty Name="Tax2" ColumnName="Tax2" />
+          <ScalarProperty Name="RunningTotal" ColumnName="RunningTotal" />
+          <ScalarProperty Name="ChangeDue" ColumnName="ChangeDue" />
+          <ScalarProperty Name="VendorNote" ColumnName="VendorNote" />
+          <ScalarProperty Name="StoreNote" ColumnName="StoreNote" />
+          <ScalarProperty Name="ConsultantId1" ColumnName="ConsultantId1" />
+          <ScalarProperty Name="ConsultantId2" ColumnName="ConsultantId2" />
+          <ScalarProperty Name="ConsultantId3" ColumnName="ConsultantId3" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="PaymentTypeId" ColumnName="PaymentTypeId" />
+          <ScalarProperty Name="CreditNumber" ColumnName="CreditNumber" />
+          <ScalarProperty Name="PaymentRef" ColumnName="PaymentRef" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="RefundTypeId" ColumnName="RefundTypeId" />
+          <ScalarProperty Name="IsStoreCredit" ColumnName="IsStoreCredit" />
+          <ScalarProperty Name="StoreCheck" ColumnName="StoreCheck" />
+          <ScalarProperty Name="StoreCheckRef" ColumnName="StoreCheckRef" />
+          <ScalarProperty Name="RefundRef" ColumnName="RefundRef" />
+          <ScalarProperty Name="IsUpdatedReceiptId" ColumnName="IsUpdatedReceiptId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTransactionTypes">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblTransactionType">
+        <MappingFragment StoreEntitySet="tblTransactionType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblVendors">
+      <EntityTypeMapping TypeName="BridalPOS.Model.tblVendor">
+        <MappingFragment StoreEntitySet="tblVendor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="ARContact" ColumnName="ARContact" />
+          <ScalarProperty Name="Acc" ColumnName="Acc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

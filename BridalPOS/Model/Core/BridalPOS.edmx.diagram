@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0e3c01c0cf5d438687a564b0f5bdb297" Name="Diagram1">
+        <EntityTypeShape EntityType="BridalPOS.Model.tblAction" Width="1.5" PointX="14" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblCashDrawer" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblClass" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblColor" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblColorNameList" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblColorNameListColor" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblCommission" Width="1.5" PointX="14" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblEmployee" Width="1.5" PointX="11.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblEvent" Width="1.5" PointX="17" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblEventType" Width="1.5" PointX="14.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblFabric" Width="1.5" PointX="6.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblFavorite" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblGeneralReport" Width="1.5" PointX="19" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblInfoSource" Width="1.5" PointX="1.5" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblInventory" Width="1.5" PointX="11.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblItemStatu" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblLeadTime" Width="1.5" PointX="6" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblMember" Width="1.5" PointX="0.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblMemberRole" Width="1.5" PointX="1.5" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblNeckLine" Width="1.5" PointX="6.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblNote" Width="1.5" PointX="14" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblPaymentType" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblPurchaseOrder" Width="1.5" PointX="9" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblPurchaseOrderDetail" Width="1.5" PointX="14" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblPurchaseStatu" Width="1.5" PointX="6.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblReportMessage" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblSchool" Width="1.5" PointX="1.5" PointY="28" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblSecurityLevel" Width="1.5" PointX="16.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblSilhouette" Width="1.5" PointX="6.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblSizeRange" Width="1.5" PointX="6.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblSleeve" Width="1.5" PointX="6.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblStyleColor" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblStyleColorNameList" Width="1.5" PointX="8.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblStyleFormat" Width="1.5" PointX="13.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblStyleMaster" Width="1.5" PointX="9" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblSysParameter" Width="1.5" PointX="16" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblTicket" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblTicketDetail" Width="1.5" PointX="11.75" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblTransactionType" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BridalPOS.Model.tblVendor" Width="1.5" PointX="6.75" PointY="19.625" IsExpanded="true" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblAction_tblEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblAction_tblMember" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblCashDrawer_tblPaymentType" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblCashDrawer_tblTransactionType" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblFavorite_tblClass" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblLeadTime_tblClass" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblClass" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblFavorite_tblColor" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblInventory_tblColor" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblCommission_tblEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblCommission_tblTicketDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblEvent_tblEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblNote_tblEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblEvent_tblEventType" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblEvent_tblMember" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblFabric" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblFavorite_tblMember" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblFavorite_tblStyleMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblGeneralReport_tblSecurityLevel" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblMember_tblInfoSource" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblInventory_tblStyleMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblLeadTime_tblVendor" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblMember_tblMember" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblMember_tblMemberRole" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblMember_tblSchool" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblNote_tblMember" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblTicket_tblMember" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblNeckLine" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblPurchaseOrder_tblPurchaseStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblPurchaseOrder_tblVendor" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblPurchaseOrderDetail_tblPurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblPurchaseOrderDetail_tblTicketDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblSilhouette" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblSizeRange" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblSizeRange1" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblSizeRange2" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblSleeve" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblSysParameter_tblStyleFormat" ManuallyRouted="false" />
+        <AssociationConnector Association="BridalPOS.Model.FK_tblStyleMaster_tblVendor" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
